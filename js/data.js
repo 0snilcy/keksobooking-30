@@ -1,5 +1,4 @@
 import {
-  used,
   addAvatar,
   getOfferPrice,
   getOfferType,
@@ -9,7 +8,7 @@ import {
   getPhotos,
   getLat,
   getLng,
-} from "./util.js";
+} from './util.js';
 
 function getData() {
   const DATA = [];
@@ -19,7 +18,7 @@ function getData() {
         avatar: addAvatar(),
       },
       offer: {
-        title: "Уютная квартира в центре города!",
+        title: 'Уютная квартира в центре города!',
         address: {
           lat: getLat(),
           lng: getLng(),
@@ -32,7 +31,7 @@ function getData() {
         checkout: getCheckinAndCheckoutTime(),
         features: getFeatures(),
         description:
-          "Прекрасная светлая квартира, оборудованная всем самым необходимым.",
+          'Прекрасная светлая квартира, оборудованная всем самым необходимым.',
         photos: getPhotos(),
       },
       location: {
